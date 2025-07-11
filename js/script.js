@@ -36,7 +36,7 @@ function renderTable() {
   list.forEach(todo => {
     const tr = document.createElement('tr');
     tr.innerHTML = `
-      <td class="p-3 ${todo.status === 'completed' ? 'status-completed' : ''}">${todo.text}</td>
+      <td class="p-3 ${todo.status === 'completed' ? 'task-completed' : ''}">${todo.text}</td>
       <td class="p-3">${todo.due}</td>
       <td class="p-3">
         <span class="${todo.status === 'pending' ? 'status-pending' : 'status-completed'} capitalize">
