@@ -1,0 +1,31 @@
+/* ------------------------------------------------------------------
+   Custom tweaks – semua styling utama tetap via Tailwind CDN
+------------------------------------------------------------------ */
+
+/* 1) warna status */
+.status-pending   { color: #f59e0b; }
+.status-completed { color: #10b981;
+                    text-decoration: line-through; }
+
+/* 2) filter */
+#filter-options {
+  min-width: 8rem;
+}
+
+select, button {
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* 3. Scrollbar dark */
+::-webkit-scrollbar        { width: 8px; height: 8px; }
+::-webkit-scrollbar-track  { background: #0f172a; }
+::-webkit-scrollbar-thumb  { background: #475569; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #64748b; }
